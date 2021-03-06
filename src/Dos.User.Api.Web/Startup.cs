@@ -60,8 +60,7 @@ namespace Dos.User.Api.Web
              .UseHealthChecks("/hc", new HealthCheckOptions
              {
              });
-            var jsontext = System.IO.File.ReadAllText(@"Data.json");
-            DataGenerator.Seed(jsontext, app.ApplicationServices);
+             DataGenerator.Seed(System.IO.File.ReadAllText(@"Data.json"), app.ApplicationServices);
         }
     }
 }
