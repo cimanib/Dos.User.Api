@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="5.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Dos.User.Api.Common\Dos.User.Api.Common.csproj" />
+    <ProjectReference Include="..\Dos.User.Api.Data.Specifications\Dos.User.Api.Data.Specifications.csproj" />
+    <ProjectReference Include="..\Dos.User.Api.Domain.Queries\Dos.User.Api.Data.Queries.csproj" />
+    <ProjectReference Include="..\Dos.User.Api.Domain\Dos.User.Api.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
