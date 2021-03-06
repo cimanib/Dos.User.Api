@@ -15,7 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\Dos.User.Api.Handlers\Dos.User.Api.Handlers.csproj" />
+    <ProjectReference Include="..\..\src\Dos.User.Api.Handlers\Dos.User.Api.Application.Handlers.csproj" />
   </ItemGroup>
 
 </Project>

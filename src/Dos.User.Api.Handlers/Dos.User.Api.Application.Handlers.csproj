@@ -8,7 +8,7 @@
     <ProjectReference Include="..\Dos.User.Api.Common\Dos.User.Api.Common.csproj" />
     <ProjectReference Include="..\Dos.User.Api.Domain.Queries\Dos.User.Api.Data.Queries.csproj" />
     <ProjectReference Include="..\Dos.User.Api.Infrastructure.Mediator\Dos.User.Api.Infrastructure.Mediator.csproj" />
-    <ProjectReference Include="..\Dos.User.Api.Messages\Dos.User.Api.Messages.csproj" />
+    <ProjectReference Include="..\Dos.User.Api.Messages\Dos.User.Api.Application.Messages.csproj" />
   </ItemGroup>
 
 </Project>

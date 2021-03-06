@@ -14,7 +14,7 @@
     <ProjectReference Include="..\Dos.User.Api.Data.Sql\Dos.User.Api.Data.Sql.csproj" />
     <ProjectReference Include="..\Dos.User.Api.Domain.Queries\Dos.User.Api.Data.Queries.csproj" />
     <ProjectReference Include="..\Dos.User.Api.Domain\Dos.User.Api.Domain.csproj" />
-    <ProjectReference Include="..\Dos.User.Api.Handlers\Dos.User.Api.Handlers.csproj" />
+    <ProjectReference Include="..\Dos.User.Api.Handlers\Dos.User.Api.Application.Handlers.csproj" />
   </ItemGroup>
 
 </Project>

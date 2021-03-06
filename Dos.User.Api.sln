@@ -17,47 +17,47 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{95362B
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{FEEEBF8D-2FEC-49AD-8736-DA21259211A0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dos.User.Api.Web", "src\Dos.User.Api.Web\Dos.User.Api.Web.csproj", "{1B11DFBC-20C8-4B96-8ED1-1DE75AB743C2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dos.User.Api.Web", "src\Dos.User.Api.Web\Dos.User.Api.Web.csproj", "{1B11DFBC-20C8-4B96-8ED1-1DE75AB743C2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dos.User.Api.Handlers", "src\Dos.User.Api.Handlers\Dos.User.Api.Handlers.csproj", "{FAFC5937-6C75-49DA-9C47-044FBBD1D2A0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dos.User.Api.Application.Handlers", "src\Dos.User.Api.Handlers\Dos.User.Api.Application.Handlers.csproj", "{FAFC5937-6C75-49DA-9C47-044FBBD1D2A0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dos.User.Api.Messages", "src\Dos.User.Api.Messages\Dos.User.Api.Messages.csproj", "{85D65DEF-0E9F-4E4C-A84E-F69C03B64C32}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dos.User.Api.Application.Messages", "src\Dos.User.Api.Messages\Dos.User.Api.Application.Messages.csproj", "{85D65DEF-0E9F-4E4C-A84E-F69C03B64C32}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Config", "Config", "{C1B372A1-6EC0-4A01-8DB9-D3B3B9E45CA5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dos.User.Api.IoC.Configuration", "src\Dos.User.Api.Config\Dos.User.Api.IoC.Configuration.csproj", "{C088115A-6957-4329-A4F5-F39ADC1A7811}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dos.User.Api.IoC.Configuration", "src\Dos.User.Api.Config\Dos.User.Api.IoC.Configuration.csproj", "{C088115A-6957-4329-A4F5-F39ADC1A7811}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Mediator", "Mediator", "{1F0B1BE5-35FD-4BE3-9B22-264E10ED1BF5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dos.User.Api.Infrastructure.Mediator", "src\Dos.User.Api.Infrastructure.Mediator\Dos.User.Api.Infrastructure.Mediator.csproj", "{AD34FBC1-168C-4B28-B7AF-FE4C4AC960FF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dos.User.Api.Infrastructure.Mediator", "src\Dos.User.Api.Infrastructure.Mediator\Dos.User.Api.Infrastructure.Mediator.csproj", "{AD34FBC1-168C-4B28-B7AF-FE4C4AC960FF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dos.User.Api.Data.Queries", "src\Dos.User.Api.Domain.Queries\Dos.User.Api.Data.Queries.csproj", "{CAF9659C-2507-4858-A13B-D80D7D7E8564}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dos.User.Api.Data.Queries", "src\Dos.User.Api.Domain.Queries\Dos.User.Api.Data.Queries.csproj", "{CAF9659C-2507-4858-A13B-D80D7D7E8564}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dos.User.Api.Data.Sql", "src\Dos.User.Api.Data.Sql\Dos.User.Api.Data.Sql.csproj", "{9950D708-3421-4B8F-9EC9-EF6FAC547F9B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dos.User.Api.Data.Sql", "src\Dos.User.Api.Data.Sql\Dos.User.Api.Data.Sql.csproj", "{9950D708-3421-4B8F-9EC9-EF6FAC547F9B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dos.User.Api.Data.Specifications", "src\Dos.User.Api.Data.Specifications\Dos.User.Api.Data.Specifications.csproj", "{76AF8C41-305A-4354-A045-551F1678255D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dos.User.Api.Data.Specifications", "src\Dos.User.Api.Data.Specifications\Dos.User.Api.Data.Specifications.csproj", "{76AF8C41-305A-4354-A045-551F1678255D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dos.User.Api.Domain", "src\Dos.User.Api.Domain\Dos.User.Api.Domain.csproj", "{B582C60D-BB0A-4975-92C1-1E31909C67FF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dos.User.Api.Domain", "src\Dos.User.Api.Domain\Dos.User.Api.Domain.csproj", "{B582C60D-BB0A-4975-92C1-1E31909C67FF}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CrossCuttingConcerns", "CrossCuttingConcerns", "{F988C9F3-0726-4FA0-BA61-0042F00B047E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dos.User.Api.Common", "src\Dos.User.Api.Common\Dos.User.Api.Common.csproj", "{778E7F4D-515B-4928-85B9-69D58EAEC42E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dos.User.Api.Common", "src\Dos.User.Api.Common\Dos.User.Api.Common.csproj", "{778E7F4D-515B-4928-85B9-69D58EAEC42E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ASPNet", "ASPNet", "{6F720CB9-436C-4DE5-B614-5BEDBE190F79}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dos.User.Api.Insfrastructure.AspNet", "src\Dos.User.Api.Insfrastructure.AspNet\Dos.User.Api.Insfrastructure.AspNet.csproj", "{D8BCC548-9A0E-49FC-B619-8D995A0C3917}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dos.User.Api.Insfrastructure.AspNet", "src\Dos.User.Api.Insfrastructure.AspNet\Dos.User.Api.Insfrastructure.AspNet.csproj", "{D8BCC548-9A0E-49FC-B619-8D995A0C3917}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Api", "Api", "{C60763D5-23B5-4CE2-AF91-94D391AEBA60}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dos.User.Api.Web.Tests", "tests\Dos.User.Api.Web.Tests\Dos.User.Api.Web.Tests.csproj", "{C085C5FF-6DBC-46E5-8890-7C500295A5FC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dos.User.Api.Web.Tests", "tests\Dos.User.Api.Web.Tests\Dos.User.Api.Web.Tests.csproj", "{C085C5FF-6DBC-46E5-8890-7C500295A5FC}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{123CDB66-277D-4A20-AD32-F2FEBE63C38A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dos.User.Api.Application.Tests", "tests\Dos.User.Api.Application.Tests\Dos.User.Api.Application.Tests.csproj", "{9C9CD94C-D47D-42AA-8658-48A8D9D01B23}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dos.User.Api.Application.Tests", "tests\Dos.User.Api.Application.Tests\Dos.User.Api.Application.Tests.csproj", "{9C9CD94C-D47D-42AA-8658-48A8D9D01B23}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CrossCuttingConcerns", "CrossCuttingConcerns", "{02670F1D-2D34-4639-B555-04E0825CB7BE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dos.User.Api.CrossCuttingConcerns.Tests", "tests\Dos.User.Api.CrossCuttingConcerns.Tests\Dos.User.Api.CrossCuttingConcerns.Tests.csproj", "{36F7F334-4233-4368-8E61-02F2F5619849}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dos.User.Api.CrossCuttingConcerns.Tests", "tests\Dos.User.Api.CrossCuttingConcerns.Tests\Dos.User.Api.CrossCuttingConcerns.Tests.csproj", "{36F7F334-4233-4368-8E61-02F2F5619849}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
