@@ -9,8 +9,7 @@ namespace Dos.User.Api.Data.Specifications
        : ISpecification<T>
     {
         #region Properties
-        public abstract bool IsSatisfiedBy(T candidate);
-        public Expression<Func<T, bool>> Criteria { get; }
+        public Expression<Func<T, bool>> Criteria { get; set; }
 
         public List<Expression<Func<T, object>>> Includes { get; } = new List<Expression<Func<T, object>>>();
 

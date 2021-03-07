@@ -22,7 +22,7 @@ namespace Dos.User.Api.Data.Sql.Repositories
         }
         public Task<IEnumerable<UserEntity>> FilterUsers(string name, string surname, CancellationToken cancellationToken = default)
         {
-            return FilterAsync(new UserSpecification(name, surname), cancellationToken);
+            return FilterAsync(new UserByNameAndSurnameSpecification(name, surname), cancellationToken);
         }
         private async Task<IEnumerable<UserEntity>> FilterAsync(ISpecification<UserEntity> specification, CancellationToken cancellationToken = default)
         {
