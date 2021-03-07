@@ -24,6 +24,12 @@ namespace Dos.User.Api.Data.Sql.Repositories
         {
             return FilterAsync(new UserByNameAndSurnameSpecification(name, surname), cancellationToken);
         }
+
+        public  async Task<IEnumerable<UserEntity>> GetAllUsers()
+        {
+            return  _context.Users.AsQueryable().AsNoTracking();
+        }
+
         private async Task<IEnumerable<UserEntity>> FilterAsync(ISpecification<UserEntity> specification, CancellationToken cancellationToken = default)
         {
             

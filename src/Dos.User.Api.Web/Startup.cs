@@ -1,6 +1,7 @@
 using Autofac;
 using Dos.User.Api.Web.Data;
 using Dos.User.Api.Web.Extensions;
+using Dos.User.Api.Web.Middlewares;
 using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
@@ -24,7 +25,6 @@ namespace Dos.User.Api.Web
         public IServiceProvider ConfigureServices(IServiceCollection services)
         {
             services
-
                 .AddHttpContextAccessor()
                 .AddCustomSwagger()
                 .AddCustomMvc()
@@ -46,13 +46,17 @@ namespace Dos.User.Api.Web
             }
 
             app
+              .UseCors("UserPolicy")
+              .UseCorsMiddleware()
               .UseExceptionHandler("/error")
               .UseSwagger()
               .UseSwaggerUI(c =>
               {
                   c.SwaggerEndpoint("v1/swagger.json", "User Api");
               })
+             
               .UseRouting()
+              .UseAuthorization()
               .UseEndpoints(endpoints =>
               {
                 endpoints.MapControllers();

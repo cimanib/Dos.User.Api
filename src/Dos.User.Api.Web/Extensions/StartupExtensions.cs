@@ -42,6 +42,7 @@ namespace Dos.User.Api.Web.Extensions
                 .AddControllers(options =>
                 {
                     options.EnableEndpointRouting = true;
+              
                     //options.Filters.Add(new AuthorizeFilter());
                 })
                 .AddNewtonsoftJson(options =>

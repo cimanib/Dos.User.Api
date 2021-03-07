@@ -49,7 +49,7 @@ namespace Dos.User.Api.Web.Tests.Controllers
                .Verifiable();
 
             //Act
-            var result = await _usersController.Dispatcher.Send(new GetUsersQuery("Bulelani", "Cimani"));
+            var result = await _usersController.Dispatcher.Send(new GetUsersQuery());
             _mediator.Verify();
             //Assert
             Assert.NotNull(result);

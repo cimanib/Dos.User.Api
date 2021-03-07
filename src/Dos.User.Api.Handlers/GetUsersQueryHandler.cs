@@ -20,7 +20,7 @@ namespace Dos.User.Api.Handlers
 
         public override async Task<UserResponse> Handle(GetUsersQuery query, CancellationToken cancellationToken)
         {
-            var response = await _userRespository.FilterUsers(query.Name, query.Surname);
+            var response = await _userRespository.GetAllUsers();
 
             if (response == null || !response.Any())
 

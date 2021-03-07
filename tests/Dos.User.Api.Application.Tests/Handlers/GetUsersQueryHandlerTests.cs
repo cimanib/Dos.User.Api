@@ -33,7 +33,7 @@ namespace Dos.User.Api.Application.Tests.Handlers
                 })
                 .Verifiable();
 
-            var query = new GetUsersQuery("Bulelani", "Cimani");
+            var query = new GetUsersQuery();
 
             //Act
             var result = await _getUsersQueryHandler.Handle(query, default);
