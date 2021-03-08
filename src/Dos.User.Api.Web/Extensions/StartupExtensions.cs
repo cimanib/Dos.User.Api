@@ -5,6 +5,7 @@ using Dos.User.Api.Configuration;
 using Dos.User.Api.Data.Sql;
 using Dos.User.Api.Data.Sql.Repositories;
 using Dos.User.Api.IoC.Configuration;
+using Dos.User.Api.Web.Filters;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Versioning;
 using Microsoft.EntityFrameworkCore;
@@ -46,8 +47,7 @@ namespace Dos.User.Api.Web.Extensions
                 .AddControllers(options =>
                 {
                     options.EnableEndpointRouting = true;
-              
-                    //options.Filters.Add(new AuthorizeFilter());
+                    options.Filters.Add<HttpGlobalExceptionFilter>();
                 })
                 .AddNewtonsoftJson(options =>
                 {
