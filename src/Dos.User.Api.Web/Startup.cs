@@ -32,7 +32,7 @@ namespace Dos.User.Api.Web
                 .AddCustomApiFeatures()
                 .AddCustomConfiguration()
                 .AddCustomHealthChecks()
-                .AddCustomDb();
+                .AddCustomDb(Configuration);
 
             return new ContainerBuilder()
                    .Registration(services);

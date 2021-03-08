@@ -3,14 +3,18 @@ using Autofac.Extensions.DependencyInjection;
 using DocumentFormat.OpenXml.EMMA;
 using Dos.User.Api.Configuration;
 using Dos.User.Api.Data.Sql;
+using Dos.User.Api.Data.Sql.Repositories;
 using Dos.User.Api.IoC.Configuration;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Versioning;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.OpenApi.Models;
 using Newtonsoft.Json;
 using Swashbuckle.AspNetCore.Swagger;
+using System;
+using System.Reflection;
 
 namespace Dos.User.Api.Web.Extensions
 {
@@ -76,10 +80,24 @@ namespace Dos.User.Api.Web.Extensions
         }
 
 
-        public static IServiceCollection AddCustomDb(this IServiceCollection services)
+        public static IServiceCollection AddCustomDb(this IServiceCollection services, IConfiguration configuration)
         {
             services
                 .AddDbContext<UserDbContext>(opt => opt.UseInMemoryDatabase("dos_users"));
+
+            //services
+            //   .AddDbContext<UserDbContext>(options =>
+            //   {
+            //       options.UseNpgsql(configuration.GetConnectionString("UserDBConnection"),
+            //               npgsqlOptionsAction: sqlOptions =>
+            //               {
+            //                   sqlOptions.MigrationsAssembly(typeof(UserQueryRespository).GetTypeInfo().Assembly.GetName().Name);
+            //                   sqlOptions.EnableRetryOnFailure(maxRetryCount: 10, maxRetryDelay: TimeSpan.FromSeconds(30), errorCodesToAdd: null);
+            //               });
+            //   }, ServiceLifetime.Scoped);
+
+
+
             return services;
         }
 
